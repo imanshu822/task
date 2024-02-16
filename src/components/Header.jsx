@@ -1,29 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import CardSectioin from "./CardSectioin";
-import Banner from "./Banner";
 
-// const plan = {
-//   standard: "₹ 1300",
-//   Professional: "₹ 2100",
-//   Enterprise: "",
-//   Standard: "₹ 3200"
-// };
-
-// const planinfo = [
-//   {
-//     title: "Standard",
-//     price: "₹ 1300",
-//     link: "",
-//     desc: "Description",
-//   },
-//   {
-//     title: "Professional",
-//     price: "₹ 2100",
-//     link: "",
-//     desc: "Description",
-//   },
-// ];
 const monthlyPlanCost = [1300, 2100, 3000, 3200];
 const yearlyPlanCost = [2600, 4100, 6000, 6400];
 function Header(props) {
@@ -62,7 +40,6 @@ function Header(props) {
       <CardSectioin
         plans={plan == "monthly" ? monthlyPlanCost : yearlyPlanCost}
       />
-      <Banner />
     </>
   );
 }
